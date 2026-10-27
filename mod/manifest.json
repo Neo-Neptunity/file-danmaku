@@ -1,0 +1,76 @@
+{
+  "id": "neo.file-danmaku",
+  "name": "ファイル弾幕",
+  "version": "2.2.1",
+  "apiVersion": 1,
+  "entry": "index.js",
+  "uses": [
+    "entries",
+    "size",
+    "modified",
+    "search",
+    "pointerLock"
+  ],
+  "location": "folder",
+  "description": "ファイルを弾にして、一人称の3D弾幕ボスに撃ちこむゲーム。大きいほどロマン砲で、容量マップにパズルのようにはめる。挑めるフォルダをさがして選ぶとボスになり、ドライブの根はラスボス。ファイルの名前・大きさ・更新日だけを読み、中身は読まず、書き換えも移動も削除もしません。通信はしません",
+  "settings": [
+    {
+      "key": "sound",
+      "label": "効果音を鳴らす",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "bgm",
+      "label": "音楽を鳴らす",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "volume",
+      "label": "音量",
+      "type": "number",
+      "default": 60,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "key": "calm",
+      "label": "画面のゆれと光の点滅をへらす",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "key": "quality",
+      "label": "画質",
+      "type": "choice",
+      "default": "high",
+      "options": [
+        {
+          "value": "high",
+          "label": "きれい"
+        },
+        {
+          "value": "light",
+          "label": "かるい"
+        }
+      ]
+    },
+    {
+      "key": "fov",
+      "label": "視野の広さ",
+      "type": "number",
+      "default": 80,
+      "min": 60,
+      "max": 105,
+      "step": 1
+    },
+    {
+      "key": "practice",
+      "label": "練習モード　弾に当たってもやられない",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}
